@@ -18,7 +18,7 @@
 For example, on Windows, when the current directory is contains the **BIRT setup.py** file a developer who wishes to modify the source would do
 
        > python -m venv BIRT_VENV
-       > BIRT_VENV/Scripts/activate.bat
+       > BIRT_VENV/Scripts/activate
        > pip install --editable .
        > birt --help
  
@@ -29,12 +29,13 @@ On Linux when the current directory is contains the **BIRT setup.py** file a dev
        $ pip install --editable .
        $ birt --help
 
-Without using **pip** a manual installation when the current directory is contains the **BIRT setup.py** file
-would look like this
+To install **BIRT** to use and not edit the source code, on Windows after downloading the zip file archive
+and unarchiving it do
 
+		cd bulkimageresizingtool
 		python -m venv BIRT_VEN
-		BIRT_VENV/Scripts/activate.bat
-		python setup.py install
+		BIRT_VENV/Scripts/activate
+		pip install .
 		birt --help
 	
 
